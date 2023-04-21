@@ -12,6 +12,9 @@ class Picture
 
 public:
 
+	//string path_to_ds = "..\\..\\";
+	string path_to_ds = "";
+
 	vector<pair<vector<double>, vector<double>>> data_set;
 
 	void read_data_set();

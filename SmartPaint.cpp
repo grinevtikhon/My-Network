@@ -9,9 +9,9 @@ SmartPaint::SmartPaint()
 	chances.resize(10, 0.5f);
 
 	
-	if (!font.loadFromFile("resources\\arial.ttf"))
+	if (!font.loadFromFile("resources/arial.ttf"))
 	{
-		cout << "BLYAAAA!!!!!!(SHRIFT GG)\n";
+		cout << "OOOOOYYYY!!!!!!(SHRIFT GG)\n";
 	}
 
 }
@@ -42,6 +42,8 @@ void SmartPaint::draw_answer()
 	text.setString((char)(ans + 48));
 	text.setPosition(28 * size_of_pixel + 180, 300);
 	text.setCharacterSize(60);
+
+	cout << ans << endl;
 
 	window.draw(text);
 
@@ -104,7 +106,7 @@ void SmartPaint::next_tick()
 
 	//cout << delta_wheel << endl;
 
-	r_brush = max(r_brush + delta_wheel * 0.03, 0.0);
+	r_brush = max(r_brush + delta_wheel * 0.3, 0.0);
 
 	sf::CircleShape brush(r_brush);
 
@@ -124,7 +126,7 @@ void SmartPaint::next_tick()
 				{
 					if (j >= 0 && j < 28 && i >= 0 && i < 28)
 					{
-						mat[i][j] = min(mat[i][j] + 0.03*(my_radius - sqrt(pow(i - y, 2) + pow(j - x, 2)) / my_radius), 1.0);
+						mat[i][j] = min(mat[i][j] + 0.025*(my_radius - sqrt(pow(i - y, 2) + pow(j - x, 2)) / my_radius), 1.0);
 					}
 				}
 			}

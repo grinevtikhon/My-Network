@@ -26,7 +26,10 @@ int Picture::reverseInt(int i)
 
 void Picture::read_data_set_pictures()
 {
-	ifstream file(/*full_path*/"data_set\\train-images.idx3-ubyte", ios::binary);
+
+	data_set.clear();
+
+	ifstream file(path_to_ds + "data_set/train-images.idx3-ubyte", ios::binary);
 	if (file.is_open())
 	{
 		int magic_number = 0;
@@ -64,7 +67,10 @@ void Picture::read_data_set_pictures()
 
 void Picture::read_test_data_set_pictures()
 {
-	ifstream file(/*full_path*/"data_set\\t10k-images.idx3-ubyte", ios::binary);
+
+	data_set.clear();
+
+	ifstream file(path_to_ds + "data_set/t10k-images.idx3-ubyte", ios::binary);
 	if (file.is_open())
 	{
 		int magic_number = 0;
@@ -102,7 +108,7 @@ void Picture::read_test_data_set_pictures()
 
 void Picture::read_data_set_labels()
 {
-	ifstream file(/*full_path*/"data_set\\train-labels.idx1-ubyte", ios::binary);
+	ifstream file(/*full_path*/"data_set/train-labels.idx1-ubyte", ios::binary);
 	if (file.is_open())
 	{
 		int magic_number = 0;
@@ -131,7 +137,7 @@ void Picture::read_data_set_labels()
 
 void Picture::read_test_data_set_labels()
 {
-	ifstream file(/*full_path*/"data_set\\t10k-labels.idx1-ubyte", ios::binary);
+	ifstream file(/*full_path*/"data_set/t10k-labels.idx1-ubyte", ios::binary);
 	if (file.is_open())
 	{
 		int magic_number = 0;

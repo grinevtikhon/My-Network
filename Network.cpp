@@ -45,9 +45,11 @@ Network::Network(vector<int> _layers_size)
 Network::Network(string _path)
 {
 
+	cout << _path << endl;
 	ifstream file(_path);
 
 	file >> learn_rate;
+
 
 
 

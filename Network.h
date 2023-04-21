@@ -4,6 +4,8 @@
 #include<fstream>
 #include<cmath>
 #include<vector>
+#include<thread>
+#include<chrono>
 #include <time.h>
 
 using namespace std;
@@ -13,7 +15,7 @@ class Network
 
 public:
 
-	double learn_rate = 0.000001;
+	double learn_rate = 0.0001;
 
 	vector<int> layers_size;
 
