@@ -1,0 +1,3 @@
+/home/tikhon/Documents/newral_network/My-Network/build/CMakeFiles/network.dir
+/home/tikhon/Documents/newral_network/My-Network/build/CMakeFiles/edit_cache.dir
+/home/tikhon/Documents/newral_network/My-Network/build/CMakeFiles/rebuild_cache.dir

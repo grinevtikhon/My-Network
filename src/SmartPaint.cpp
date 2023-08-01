@@ -9,7 +9,7 @@ SmartPaint::SmartPaint()
 	chances.resize(10, 0.5f);
 
 	
-	if (!font.loadFromFile("resources/arial.ttf"))
+	if (!font.loadFromFile("../resources/arial.ttf"))
 	{
 		cout << "OOOOOYYYY!!!!!!(SHRIFT GG)\n";
 	}

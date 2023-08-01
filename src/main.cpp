@@ -16,7 +16,7 @@ const string sost = "DRAW"; // "LEARN" "DRAW" "TEST" "DAWN" "SUPER TEST" "BIG WO
 
 /////////////////////////
 
-string path_to_network = "networks/network_16_16";
+string path_to_network = "../networks/network_16_16";
 
 vector<int> sloi{ 28 * 28,20, 10 };
 
@@ -25,7 +25,7 @@ vector<int> sloi{ 28 * 28,20, 10 };
 
 // Network diana(path_to_network + "weights_to_network.txt");
 // Network diana(sloi);
-Network diana("networks/magic.txt");
+Network diana("../networks/magic.txt");
 
 
 int main()
@@ -173,8 +173,8 @@ int main()
 
 		diana.learn_rate = 0.00001;
 
-		ofstream testf("networks/3_gen/test.txt", ofstream::out | ofstream::app);
-		ofstream trainingf("networks/3_gen/training.txt", ofstream::out | ofstream::app);
+		ofstream testf("../networks/3_gen/test.txt", ofstream::out | ofstream::app);
+		ofstream trainingf("../networks/3_gen/training.txt", ofstream::out | ofstream::app);
 
 		diana.examples = picture.data_set;
 
@@ -266,7 +266,7 @@ int main()
 
 			if (st % 10 == 0)
 			{
-				diana.save_network_as("networks/3_gen/1.txt");
+				diana.save_network_as("../networks/3_gen/1.txt");
 				cout << "I SAVE IT!!\n";
 			}
 
@@ -345,7 +345,7 @@ int main()
 		{
 			if (st >= 10)
 			{
-				diana.save_network_as("networks/2_gen_13.txt");
+				diana.save_network_as("../networks/2_gen_13.txt");
 				st = 0;
 				cout << "I SAVE IT!!\n";
 			}

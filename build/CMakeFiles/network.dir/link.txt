@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/network.dir/src/main.cpp.o CMakeFiles/network.dir/src/MyGraphic.cpp.o CMakeFiles/network.dir/src/Network.cpp.o CMakeFiles/network.dir/src/Picture.cpp.o CMakeFiles/network.dir/src/SmartPaint.cpp.o -o network  /usr/lib/libsfml-graphics.so.2.6.0 /usr/lib/libsfml-window.so.2.6.0 /usr/lib/libsfml-system.so.2.6.0 
